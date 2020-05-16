@@ -50,6 +50,21 @@
 .max-w-10px {
   max-width: 10px;
 }
+.w-30percent {
+  width: 30%;
+}
+.max-w-50px {
+  max-width: 50px;
+}
+.min-h-50px {
+  min-height: 50px;
+}
+.p-top-11px {
+  padding-top: 11px;
+}
+.rounded-5px {
+  border-radius: 5px;
+}
 .myNavbar__item {
   // border-dotted-left-15px border-orange-100 my-5px mx-0 relative bg-gray-500 flex items-stretch text-gray-100 vw-25
 
@@ -116,30 +131,44 @@
 }
 
 @media (max-width: 480px) {
+  .sm\:w-30percent {
+    width: 30%;
+  }
+  .sm\:max-w-50px {
+    max-width: 50px;
+  }
+  .sm\:min-h-50px {
+    min-height: 50px;
+  }
+  .sm\:p-top-11px {
+    padding-top: 11px;
+  }
+  .sm\:rounded-5px {
+    border-radius: 5px;
+  }
   .myNavbar {
-    justify-content: flex-start;
+    // sm:justify-start
     .myNavbar__container {
-      flex-direction: column;
-      width: 100%;
-      display: none;
+      // sm:flex-col sm:w-full sm:hidden
     }
     .myNavbar__item--raw {
-      width: 30%;
-      max-width: 50px;
-      min-height: 50px;
-      display: flex;
-      justify-content: center;
-      padding-top: 11px;
-      border-radius: 5px;
-      .fa-caret-square-down {
-        display: block;
-      }
+      //sm:w-30percent sm:max-w-50px sm:min-h-50px sm:flex sm:justify-center sm:p-top-11px sm:rounded-5px
+      // width: 30%;
+      // max-width: 50px;
+      // min-height: 50px;
+      // display: flex;
+      // justify-content: center;
+      // padding-top: 11px;
+      // border-radius: 5px;
+      // .fa-caret-square-down {
+      //   display: block;
+      // }
     }
   }
 }
 .fa-caret-square-up {
-  display: none;
+  // display: none;
 }
 .fa-caret-square-down {
-  display: none;
+  // display: none;
 }

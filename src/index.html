@@ -11,21 +11,26 @@
         <title>El Huérfano de los Zhao</title>
     </head>
     <body class="bg-orange-100 flex flex-col">
-        <div class="myNavbar flex w-full justify-center my-bottom-20">
+        <div
+            class="myNavbar flex w-full justify-center my-bottom-20 sm:justify-start"
+        >
             <div
-                class="myNavbar__item border-dotted-left-15px border-orange-100 my-5px mx-0 relative bg-gray-500 flex items-stretch text-gray-100 vw-25 myNavbar__item--raw border-none min-w-5percent max-w-10px"
+                class="myNavbar__item border-dotted-left-15px border-orange-100 my-5px mx-0 relative bg-gray-500 flex items-stretch text-gray-100 vw-25 myNavbar__item--raw border-none min-w-5percent max-w-10px sm:w-30percent sm:max-w-50px sm:min-h-50px sm:flex sm:justify-center sm:p-top-11px sm:rounded-5px"
                 id="myNavbar__item--raw--js"
             >
                 <i
-                    class="fas fa-caret-square-down fa-2x"
+                    class="fas fa-caret-square-down fa-2x sm:block hidden"
                     id="fa-caret-square-down"
                 ></i>
                 <i
-                    class="fas fa-caret-square-up fa-2x"
+                    class="fas fa-caret-square-up fa-2x hidden"
                     id="fa-caret-square-up"
                 ></i>
             </div>
-            <div class="myNavbar__container flex" id="myNavbar__container--js">
+            <div
+                class="myNavbar__container flex sm:flex-col sm:w-full sm:hidden"
+                id="myNavbar__container--js"
+            >
                 <a
                     href="index.html"
                     class="myNavbar__item border-dotted-left-15px border-orange-100 my-5px mx-0 relative bg-gray-500 flex items-stretch text-gray-100 vw-25 myNavbar__item--selected myNavbar__item--homepage"
