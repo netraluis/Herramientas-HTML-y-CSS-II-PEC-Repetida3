@@ -1,16 +1,20 @@
-body {
-  background-color: theme-color("backgroundColor");
-}
-.about__body {
-  display: flex;
-  flex-direction: column;
+// body {
+//   // background-color: theme-color("backgroundColor");
+//   background-color: beige;
+// }
+// .about__body {
+//   display: flex;
+//   flex-direction: column;
+// }
+.my-top-100px {
+  margin-top: 100px;
 }
 .container--about {
-  margin-top: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-around;
+  //my-top-100px flex flex-wrap w-full justify-around
+  // display: flex;
+  // flex-wrap: wrap;
+  // width: 100%;
+  // justify-content: space-around;
   .container--about__item {
     width: 360px;
     //para pc
