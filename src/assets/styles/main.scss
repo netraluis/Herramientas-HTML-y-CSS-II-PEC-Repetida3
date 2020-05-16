@@ -1,0 +1,38 @@
+/**
+* Import variables
+*/
+ @import "layouts/global_tailwind";
+
+
+
+// @import "variables";
+
+/**
+* Import npm dependencies
+* see: https://en.parceljs.org/module_resolution.html
+* see commented examples below
+*/
+
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
+// @import"~bootstrap/scss/bootstrap.scss";
+@import "@fortawesome/fontawesome-free/css/all.css";
+// @import "~rfs/scss";
+// @import "./../../../node_modules/rfs/scss.scss";
+/**
+* Import layouts
+* It's a best practice to use a partial for each page
+*/
+
+
+// @import "layouts/global_tailwind";
+// @import "layouts/global";
+// @import "layouts/about";
+// @import "layouts/article";
+// @import "layouts/home";
+
+/**
+ * Do NOT include anything else in this file!
+ */
+
+ 

@@ -1,0 +1,113 @@
+@tailwind base;
+
+
+@tailwind components;
+
+.nav{
+    @apply flex flex-row text-pink-200 bg-orange-200;
+    
+}
+.nav_item{
+    @apply w-1/3 justify-center border-2 border-pink-700 border-2 p-5 bg-pink-400 rounded ;
+    
+}
+//----------------------------------------------------------------------------
+
+.cardFlip{
+    @apply  h-auto border-2 border-black bg-gray-300 m-12 widht-30per;
+    min-width: 360px;
+    &:hover .cardFlip__box{
+        @apply turnCard;
+    }
+}
+.cardFlip__box{
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+    
+}
+.cardFlip--face{
+    @apply distorted absolute hideBackFace w-full;
+}
+.cardFlip--back{
+    @apply bg-gray-200 overflow-scroll overflow-x-hidden w-full relative sameHeightCards;
+    div{
+        @apply absolute w-full h-full p-3;
+    }
+}
+
+.cardFlip--face.cardFlip--back{
+    @apply turnDistortedCard
+}
+.btn--cardflip{
+    @apply border-2 border-solid border-black flex items-center flex-col justify-center;
+}
+.coverImage--polaroid{
+    @apply border border-solid border-gray-400 max-w-full p-2 pb-4 bg-white shadow-md distorted;
+}
+//-------------------------------------------------------------------------
+@media (min-width: 768px)  {
+    .nav {
+        @apply order-2 flex flex-grow textRotate-90;
+    }
+
+    .nav_item{
+        @apply w-2/3 height-1/3;
+        &:hover{
+            @apply w-full;
+        }
+    }
+    .nav_item_act{
+        @apply bg-blue-500;
+        &:hover{
+            @apply w-2/3;
+        }
+    }
+
+}
+
+
+@tailwind utilities;
+
+//adding new utilities
+
+//utilidades de about
+.textRotate-90{
+    writing-mode: vertical-rl;
+}
+
+.height-1\/3{
+    height: 33vh;
+}
+.height-2\/3{
+    height: 33vh;
+}
+
+.widht-30per{
+    width: 30%;
+}
+.widht-60per{
+    width: 60%;
+}
+.distorted{
+    transform:rotate(5deg);
+}
+.turnCard{
+    transform: rotateY(180deg)
+}
+.turnDistortedCard{
+    transform: rotateY(180deg) rotate(5deg);
+}
+.hideBackFace{
+    backface-visibility: hidden;
+}
+.sameHeightCards{
+    padding-bottom: 103.5%;
+}
+
+.text-7xl{
+    font-size: 7rem;
+}
+
+
+//https://tailwindcss-custom-forms.netlify.com/ 
+//https://github.com/tailwindcss/custom-forms
