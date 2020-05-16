@@ -29,6 +29,18 @@
 .pos-top-25 {
   top: -25%;
 }
+.pos-left-2375px {
+  left: 23.75px;
+}
+.pos-top-25px {
+  top: -25px;
+}
+.pos-bottom-25px {
+  bottom: -25px;
+}
+.rounded-50percent {
+  border-radius: 50%;
+}
 .myNavbar__item {
   // border-dotted-left-15px border-orange-100 my-5px mx-0 relative bg-gray-500 flex items-stretch text-gray-100 vw-25
 
@@ -65,18 +77,14 @@
   }
 }
 .myNavbar__item__round {
-  z-index: 10;
-  background-color: beige;
-  width: $homepage-radius-ticket-break * 2;
-  height: $homepage-radius-ticket-break * 2;
-  position: absolute;
-  left: $homepage-radius-ticket-break * (-1)-3.75px;
-  border-radius: 50%;
+  //z-10 bg-orange-100 w-40px h-40px absolute pos-left-2375px rounded-50percent
 }
 .myNavbar__item__round--top {
-  top: $homepage-radius-ticket-break * (-1) - $homepage-navbar-margin-top;
+  //pos-top-25px
+  // top: $homepage-radius-ticket-break * (-1) - $homepage-navbar-margin-top;
 }
 .myNavbar__item__round--bottom {
+  //pos-bottom-25px
   bottom: $homepage-radius-ticket-break * (-1) - $homepage-navbar-margin-top;
 }
 
