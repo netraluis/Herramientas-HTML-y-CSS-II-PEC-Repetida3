@@ -41,6 +41,15 @@
 .rounded-50percent {
   border-radius: 50%;
 }
+.my-bottom-20 {
+  margin-bottom: 20px;
+}
+.min-w-5percent {
+  min-width: 5%;
+}
+.max-w-10px {
+  max-width: 10px;
+}
 .myNavbar__item {
   // border-dotted-left-15px border-orange-100 my-5px mx-0 relative bg-gray-500 flex items-stretch text-gray-100 vw-25
 
@@ -89,21 +98,20 @@
 }
 
 .myNavbar {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-bottom: $about-radius-ticket-break;
+  //flex w-full justify-center my-bottom-20
   .myNavbar__container {
-    display: flex;
+    //flex
+    // display: flex;
   }
   // .myNavbar__item {
   // }
 
   //esto tiene que ir al final
   .myNavbar__item--raw {
-    border: none;
-    min-width: 5%;
-    max-width: 10px;
+    //border-none min-w-5percent max-w-10px
+    // border: none;
+    // min-width: 5%;
+    // max-width: 10px;
   }
 }
 
@@ -123,17 +131,15 @@
       justify-content: center;
       padding-top: 11px;
       border-radius: 5px;
-      .fa-caret-square-up {
-        display: none;
+      .fa-caret-square-down {
+        display: block;
       }
     }
   }
 }
-@media (min-width: 481px) {
-  .fa-caret-square-up {
-    display: none;
-  }
-  .fa-caret-square-down {
-    display: none;
-  }
+.fa-caret-square-up {
+  display: none;
+}
+.fa-caret-square-down {
+  display: none;
 }
