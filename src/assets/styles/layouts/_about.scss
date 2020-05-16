@@ -101,22 +101,5 @@
   .about__btn {
     // height: 10vh;
     // w-2/5 h-60px flex justify-center items-center bg-red-700 text-gray-100 rounded-lg
-    width: 40%;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // border: 2px solid theme-color("third");
-    background-color: theme-color("third");
-    color: theme-color("secondary");
-    // border-radius: 3vh;
-    // font-size: 1.5em;
-    // padding: 0 15px;
-  }
-}
-@media (max-width: 955px) {
-  div.container--about div.container--about__item {
-    margin: 0;
-    height: 510px;
   }
 }

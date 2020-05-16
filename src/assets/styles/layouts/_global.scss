@@ -26,8 +26,8 @@
   // $homepage-navbar-margin-top: 5px;
   // $homepage-border-dotted-thick: 15px;
 
-  // border-dotted-left-15px border-backgroundColor my-5px mx-0 relative bg-primary flex items-stretch text-secondary
-  border-left: $homepage-border-dotted-thick dotted beige;
+  // border-dotted-left-15px border-orange-100 my-5px mx-0 relative bg-gray-500 flex items-stretch text-gray-100
+  border-left: 15px dotted beige;
   margin: $homepage-navbar-margin-top 0;
   position: relative;
   background-color: theme-color("primary");
