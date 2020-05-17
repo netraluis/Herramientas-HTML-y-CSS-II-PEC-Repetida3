@@ -1,3 +1,6 @@
+.font-ptserif {
+  font-family: "PT Serif", serif;
+}
 .mainContainer {
   //flex flex-col w-full justify-center
   display: flex;
@@ -6,26 +9,27 @@
   justify-content: center;
 }
 .container--article {
-  // mx-auto font-serif bg-gray-100 text-gray-700
-  margin: auto;
-  font-family: "PT Serif", serif;
-  background-color: theme-color("secondary");
-  color: theme-color("textTitle");
+  // mx-auto font-ptserif bg-gray-100 text-gray-700
+  // margin: auto;
+  // font-family: "PT Serif", serif;
+  // background-color: theme-color("secondary");
+  // color: theme-color("textTitle");
   .article__picture {
     // mx-auto
     // background-color: red;
     // max-width: 80%;
-    margin: auto;
+    // margin: auto;
   }
 
   header {
+    //border-b-4 border-gray-700
+    // border-bottom: 5px solid theme-color("textTitle");
     h1 {
       font-size: 2.5rem;
       text-align: center;
       font-weight: bold;
       margin: 0;
     }
-    border-bottom: 5px solid theme-color("textTitle");
   }
 }
 
