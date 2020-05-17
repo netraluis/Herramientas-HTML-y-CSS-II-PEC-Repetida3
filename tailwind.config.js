@@ -1,13 +1,10 @@
 module.exports = {
   theme: {
     screens: {
-      xl: { max: "1279px" },
-      // => @media (max-width: 1279px) { ... }
-
-      lg: { max: "1023px" },
+      lg: { max: "975px" },
       // => @media (max-width: 1023px) { ... }
 
-      md: { max: "767px" },
+      md: { max: "700px" },
       // => @media (max-width: 767px) { ... }
 
       sm: { max: "480px" },
