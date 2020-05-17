@@ -183,6 +183,26 @@
     border-radius: 5px;
   }
 }
+@media (max-width: 975px) {
+  .lg\:h-1200px {
+    height: 1200px;
+  }
+  .lg\:p-x-15 {
+    margin: 0 15px;
+  }
+  .lg\:w-700px {
+    width: 700px;
+  }
+}
+
+@media (max-width: 700px) {
+  .md\:w-screen-80 {
+    width: 80vw;
+  }
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+}
 
 //https://tailwindcss-custom-forms.netlify.com/
 //https://github.com/tailwindcss/custom-forms
