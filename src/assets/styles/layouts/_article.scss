@@ -1,0 +1,117 @@
+.mainContainer {
+  //flex flex-col w-full justify-center
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+.container--article {
+  // mx-auto font-serif bg-gray-100 text-gray-700
+  margin: auto;
+  font-family: "PT Serif", serif;
+  background-color: theme-color("secondary");
+  color: theme-color("textTitle");
+  .article__picture {
+    // mx-auto
+    // background-color: red;
+    // max-width: 80%;
+    margin: auto;
+  }
+
+  header {
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      font-weight: bold;
+      margin: 0;
+    }
+    border-bottom: 5px solid theme-color("textTitle");
+  }
+}
+
+main {
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 750px;
+    align-items: center;
+    ul {
+      border-top: 5px solid theme-color("textTitle");
+      border-bottom: 5px solid theme-color("textTitle");
+      width: 300px;
+    }
+    // margin: 5vh 0;
+
+    h1 {
+      margin: 0 0 -0.75rem 0;
+      text-decoration: underline;
+    }
+    div img {
+      width: 100%;
+      filter: grayscale(100%);
+    }
+    p::first-letter {
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+    }
+    p {
+      // text-align: justify;
+      width: 300px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 975px) {
+  body {
+    margin: 0;
+  }
+  .mainContainer {
+    width: 90%;
+  }
+  .container--article {
+    width: 700px;
+    h1 {
+      width: 100%;
+    }
+    .article__picture {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  main {
+    section {
+      height: 1200px;
+      p {
+        margin: 0 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  div.container--article {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    header {
+      h1 {
+        width: 100%;
+      }
+    }
+    main {
+      section {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      p {
+        width: 80vw;
+        margin: 0px;
+      }
+    }
+  }
+}
