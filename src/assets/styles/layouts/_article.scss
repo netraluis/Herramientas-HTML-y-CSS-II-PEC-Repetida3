@@ -44,16 +44,13 @@ main {
     // height: 750px;
     // align-items: center;
     ul {
-      border-top: 5px solid theme-color("textTitle");
-      border-bottom: 5px solid theme-color("textTitle");
-      width: 300px;
+      //border-t-4 border-b-4 border-gray-700 w-300px
+      // border-top: 5px solid theme-color("textTitle");
+      // border-bottom: 5px solid theme-color("textTitle");
+      // width: 300px;
     }
     // margin: 5vh 0;
 
-    h1 {
-      margin: 0 0 -0.75rem 0;
-      text-decoration: underline;
-    }
     div img {
       width: 100%;
       filter: grayscale(100%);
