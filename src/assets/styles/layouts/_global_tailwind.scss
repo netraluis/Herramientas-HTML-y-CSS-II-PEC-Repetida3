@@ -24,12 +24,9 @@
 
 @tailwind utilities;
 
-//adding new utilities
-
-//utilidades de about
-// .textRotate-90 {
-//   writing-mode: vertical-rl;
-// }
+.font-ptserif {
+  font-family: "PT Serif", serif;
+}
 .my-top-100px {
   margin-top: 100px;
 }
