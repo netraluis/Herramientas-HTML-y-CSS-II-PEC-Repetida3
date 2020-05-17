@@ -15,64 +15,12 @@
   @apply w-full;
   filter: grayscale(100%);
 }
-
-// .nav {
-//   @apply flex flex-row text-pink-200 bg-orange-200;
-// }
-// // .nav_item {
-//   @apply w-1/3 justify-center border-2 border-pink-700 border-2 p-5 bg-pink-400 rounded;
-// }
-// //----------------------------------------------------------------------------
-
-// .cardFlip {
-//   @apply h-auto border-2 border-black bg-gray-300 m-12 widht-30per;
-//   min-width: 360px;
-//   &:hover .cardFlip__box {
-//     @apply turnCard;
-//   }
-// }
-// .cardFlip__box {
-//   transform-style: preserve-3d;
-//   transition: all 0.5s linear;
-// }
-// .cardFlip--face {
-//   @apply distorted absolute hideBackFace w-full;
-// }
-// .cardFlip--back {
-//   @apply bg-gray-200 overflow-scroll overflow-x-hidden w-full relative sameHeightCards;
-//   div {
-//     @apply absolute w-full h-full p-3;
-//   }
-// }
-
-// .cardFlip--face.cardFlip--back {
-//   @apply turnDistortedCard;
-// }
-// .btn--cardflip {
-//   @apply border-2 border-solid border-black flex items-center flex-col justify-center;
-// }
-// .coverImage--polaroid {
-//   @apply border border-solid border-gray-400 max-w-full p-2 pb-4 bg-white shadow-md distorted;
-// }
-// //-------------------------------------------------------------------------
-// @media (min-width: 768px) {
-//   .nav {
-//     @apply order-2 flex flex-grow textRotate-90;
-//   }
-
-//   .nav_item {
-//     @apply w-2/3 height-1/3;
-//     &:hover {
-//       @apply w-full;
-//     }
-//   }
-//   .nav_item_act {
-//     @apply bg-blue-500;
-//     &:hover {
-//       @apply w-2/3;
-//     }
-//   }
-// }
+.firstBigLetter-w-300px {
+  @apply w-300px m-0 p-0;
+  &::first-letter {
+    @apply tracking-widest text-3xl;
+  }
+}
 
 @tailwind utilities;
 
@@ -216,6 +164,24 @@
 }
 .rotate-10 {
   transform: rotate(10deg);
+}
+
+@media (max-width: 480px) {
+  .sm\:w-30percent {
+    width: 30%;
+  }
+  .sm\:max-w-50px {
+    max-width: 50px;
+  }
+  .sm\:min-h-50px {
+    min-height: 50px;
+  }
+  .sm\:p-top-11px {
+    padding-top: 11px;
+  }
+  .sm\:rounded-5px {
+    border-radius: 5px;
+  }
 }
 
 //https://tailwindcss-custom-forms.netlify.com/
